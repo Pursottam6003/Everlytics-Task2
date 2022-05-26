@@ -1,0 +1,132 @@
+<!-- Name : Pursottam Sah 
+College : NIT Arunachal Pradesh 
+Task : Pre-Internship Test
+Company : everlytics  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert JSON Data to HTML Table</title>
+    <style>
+
+        body 
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .info 
+        {   
+            display: inline-block;
+            margin-left:10%;
+            font-weight: 600;
+            padding-top: 0px;
+
+        }
+
+        .profile 
+        {
+            display: inline-block;
+            padding: 10px; 
+        }
+        .info a 
+        {
+            text-decoration: none;
+        }
+        th, td, p, input {
+            font:14px;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: left;
+        }
+
+        td:nth-child(2n)
+        {
+            background-color:rgb(191, 191, 191);
+        }
+        tr {
+            font-weight:bold;
+        }
+        
+        #btn 
+        {
+            width: 150px;
+            height: 30px;
+            color:white;
+            background-color: #6FA8DC;
+            border:none;
+            font-weight: bold;
+            margin-left:45%;
+        }
+
+
+        table 
+        {
+            margin:auto;
+        }
+
+        #html-data-table
+        {
+            opacity: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="info">
+        <!-- My perosnal information -->
+        <p>Name : Pursottam Sah  </p>
+        <p>College : NIT Arunachal Pradesh</p>
+        <p>Task : Pre-Internship Test</p>
+        <p>Portfolio : <a href="https://pursottam6003.github.io/Portfolio/">Personal Portfolio</a></p>
+        <p>Github : <a href="https://github.com/Pursottam6003">My Github Account</a> </p>
+        <p>Linkedin : <a href="https://www.linkedin.com/in/pursottam-sah-78aa4a1bb/">Linkedin</a></p>
+        <p>Recent Projects on Web Developments :
+            <a href="https://pursottam6003.github.io/TypingGame/">Typing Game</a>
+            <a href="https://pursottam6003.github.io/project-internship/">Calculator</a>
+            <a href="https://github.com/Pursottam6003/MyTodoList">To-do-list</a>
+        </p>
+        <p>Company : everlytics</p>
+    </div>
+
+    <div class="profile">
+        <img src="./programer.jpg" alt="programmer image">
+    </div>
+    <input type="button" id="btn" value="GET TABLE "/>
+    <p class="heading">
+        <h3>Equiptment-wise Details</h3>
+    </p>
+
+    <table id="html-data-table">
+        <tr>
+            <th rowspan="2">MACHINE NAME</th>
+            <th rowspan="2">MACHINE ID</th>
+            <th colspan="3">ENERGY CONSUMED</th>
+            <th rowspan="2" >Active Power</th>
+            <th rowspan="2">Apperant Power</th>
+            <th rowspan="2">Reactive Power</th>
+            <th rowspan="2">CURRENT</th>
+            <th rowspan="2">VOLTAGE </th>
+            <th rowspan="2">POWER FACTOR</th>
+            <th colspan="3">IDLE TIME</th>
+        </tr>
+
+        <tr>
+            <th class="ec">Today</th>
+            <th class="ec">MTD</th>
+            <th class="ec">YTD</th>
+            <th class="idle">Today</th>
+            <th class="idle">MTD</th>
+            <th class="idle">YTD</th>
+        </tr>
+        <tr></tr>
+    </table>
+    
+    <p id="ShowTable"></p>
+    <script defer src="./script.js"></script>
+</body>
+</html>
